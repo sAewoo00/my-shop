@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <ProductCard
+      name="Єгипетський хрест Анх"
+      description="Символ життя в стародавньому Єгипті, виготовлений із бронзи."
+      image="https://i.pinimg.com/736x/99/67/2d/99672d7447d2b08562e691a8fb27b984.jpg"
+      :price="410"
+    />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ProductCard from './components/ProductCard.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ProductCard
   }
 }
 </script>
